@@ -184,6 +184,11 @@ public class Network implements INetwork {
     }
 
     @Override
+    public int hashCode() {
+        return elements.hashCode();
+    }
+
+    @Override
     public NBTTagCompound toNBT() {
         NBTTagCompound tag = new NBTTagCompound();
         tag.setTag("baseCluster", this.baseCluster.toNBT());
