@@ -86,7 +86,7 @@ public class Network implements INetwork {
      */
     @Deprecated // TODO remove in 1.13
     public static boolean areNetworksEqual(Network networkA, Network networkB) {
-        return networkA.elements.containsAll(networkB.elements) && networkA.elements.size() == networkB.elements.size();
+        return networkA.equals(networkB);
     }
 
     /**
