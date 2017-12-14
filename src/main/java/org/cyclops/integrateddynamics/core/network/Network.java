@@ -182,7 +182,7 @@ public class Network implements INetwork {
     public boolean equals(Object object) {
         if(!(object instanceof Network)) return false;
         Network network = (Network) object;
-        return elements.containsAll(network.elements) && elements.size() == network.elements.size();
+        return elements.equals(network.elements);
     }
 
     @Override
