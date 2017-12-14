@@ -180,9 +180,7 @@ public class Network implements INetwork {
 
     @Override
     public boolean equals(Object object) {
-        if(!(object instanceof Network)) return false;
-        Network network = (Network) object;
-        return elements.equals(network.elements);
+        return object instanceof Network && elements.equals(((Network)object).elements);
     }
 
     @Override
