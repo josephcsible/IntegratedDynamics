@@ -82,7 +82,9 @@ public class Network implements INetwork {
      * @param networkA A network.
      * @param networkB Another network.
      * @return If they are equal.
+     * @deprecated Use {@link Object#equals} instead
      */
+    @Deprecated // TODO remove in 1.13
     public static boolean areNetworksEqual(Network networkA, Network networkB) {
         return networkA.elements.containsAll(networkB.elements) && networkA.elements.size() == networkB.elements.size();
     }
